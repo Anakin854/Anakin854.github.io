@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Schedule</title>
 </head>
 <style>
     table,td,th {
-        border: 1px solid blue; 
-        background-color: rgb(18, 131, 131);
-        color: rgb(127, 241, 74);}
+        border: 1px solid rgb(9, 161, 128); 
+        border-collapse:collapse;
+        background-color: rgb(34, 51, 68);
+        color: #56c8eb8a;
+        font-family: cursive;}
+        body {background-color: #155547d8;}
 </style>
 <body>
     <table>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">Monday</th>
-            <th scope="col">Tuseday</th>
-            <th scope="col">Wendsday</th>
-            <th scope="col">Thursday</th>
-            <th scope="col">Friday</th>
-        </tr>
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuseday</th>
+                <th scope="col">Wendsday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+            </tr>
+        </thead>
+        
         <tr>
             <th scope="row">1st Hour</th>
             <td colspan="5"><center>Global Studies</center></td>
@@ -31,14 +37,15 @@
             <th scope="row">2nd Hour</th>
             <td rowspan="2"
             <td colspan="2"><center>PLTW Intro to Enginer and Design</center></td>
+            <td colspan="1"><center>PLTW Intro to Enginer and Design</center></td>
+            <td rowspan="2"
+            <td colspan="2"><center>PLTW Intro to Enginer and Design</center></td>       
         </tr>
         <tr>
             <th scope="row">Advisory</th>
-          <td col>Advisory</td>
-            <td colspan="2"><center>PLTW Intro to Enginer and Design</center></td>
-        <td rowspan=""></td>
+          <td col><center>Advisory</center></td>
+
         </tr>
-        <tr>
         <tr>
             <th scope="row">3rd Hour</th>
             <td colspan="5"><center>AS Culinary Arts</center></td>
