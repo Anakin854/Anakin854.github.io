@@ -7,29 +7,36 @@
     <title>Contact Me</title>
 </head>
 <style>
-    #style{ 
-        color:aquamarine
-        background-color: rgb(30, 252, 222);
-
-    }
+    #backgrounddiv {background-color: #25e960;
+        }
 </style>    
 
 <body>
     <h1>Contact Me</h1>
-    <form action="#" method="post">
-        <br><input type="text" name="myname" id="myname" required></input></form></body>
-        <label for="myname">Name: </label>
-        <input type="text" name="subject" id="subject" required
+    <div id="backgrounddiv"
+    <form action="#" method="post" style="text-align: center;" onsubmit="alert('Not implemented yet');">
+        <br> Name:<span class="rqd">*</span class="rqd"><br> <input type="text" name="subject" id="subject" required
             placeholder="Name"/></html></br>
-        <input type="text" name="subject" id="subject" required/>
-        <textarea name="tbody" id="tbody" required>
-                Enter message...
-        </textarea>
+        <br> Subject:<br> <input type="text" name="subject" id="subject" required/>
+        <br><br><textarea name="tbody" id="tbody" required
+           placeholder="Enter Messege..."max-width: 50px></textarea></br>
 
-        <label for="attach">Attachments: </label>
+       <br> <label for="attach">Attachments: </label>
         <input type="file" name="attach" id="attach">
+        <br><lable for="priority">Priority</lable>
+        <br><select name="priority">
+            <option disabled selected value>Selected Option</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="crit">Crit</option>
+        </select>
+        <br><input type="radio" name="flwup" id="flwup" vaule="yes"/>Yes
+        <br><input type="radio" name="flwup" id="flwup" vaule="No"/>No
         
-        <input type="submit" name="submit" id="sbutton">
+        <br><input type="submit" name="submit" id="sbutton">
+        
         </form>
+    </div>
 </body>
 </html>
