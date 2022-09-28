@@ -7,8 +7,23 @@
     <title>Contact Me</title>
 </head>
 <style>
-    #backgrounddiv {background-color: #25e960;
+    body{background-color: #228b41;
+    color: #71e995;}
+    label{font-weight: bold;}
+
+    #backgrounddiv {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #14571ddc;
+        background-color: #25e960;
+        border-radius: 5px;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        /* 30 top/bot, 15 1/r */
+        padding: 30px 15px;
         }
+    
+        
 </style>    
 
 <body>
@@ -17,24 +32,27 @@
     <form action="#" method="post" style="text-align: center;" onsubmit="alert('Not implemented yet');">
         <br> Name:<span class="rqd">*</span class="rqd"><br> <input type="text" name="subject" id="subject" required
             placeholder="Name"/></html></br>
-        <br> Subject:<br> <input type="text" name="subject" id="subject" required/>
+       
+            <br> Subject:<span class="rqd">*</span class="rqd"><br> <input type="text" name="subject" id="subject" required/>
         <br><br><textarea name="tbody" id="tbody" required
            placeholder="Enter Messege..."max-width: 50px></textarea></br>
 
        <br> <label for="attach">Attachments: </label>
-        <input type="file" name="attach" id="attach">
-        <br><lable for="priority">Priority</lable>
+        <br><input type="file" name="attach" id="attach">
+        
+       <br><br><lable for="priority">Priority</lable>
         <br><select name="priority">
-            <option disabled selected value>Selected Option</option>
+            <option disabled selected value>Select an Option</option>
             <option value="low">Low</option>
             <option value="medium">Medium</option>
             <option value="high">High</option>
             <option value="crit">Crit</option>
         </select>
+        <br><br>Do you want a follow up email?
         <br><input type="radio" name="flwup" id="flwup" vaule="yes"/>Yes
         <br><input type="radio" name="flwup" id="flwup" vaule="No"/>No
         
-        <br><input type="submit" name="submit" id="sbutton">
+      <br> <br><input type="submit" name="submit" id="sbutton">
         
         </form>
     </div>
