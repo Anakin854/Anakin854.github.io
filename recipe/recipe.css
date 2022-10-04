@@ -1,1 +1,16 @@
-*{font-family: cursive;}
+h3{
+    color: #A4A400; font-family: sans-serif; 
+    background-color: #F0F0F0;
+    
+}
+
+#comdiv{
+    background-color: #FFFFA8 ;
+}
+
+#style{
+    color: #404040;
+}
+#pdiv{
+    background-color: aliceblue;
+}
