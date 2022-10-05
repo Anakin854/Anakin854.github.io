@@ -1,0 +1,7 @@
+table,td,th {
+    border: 5px; 
+    border-collapse:collapse;
+    background-color: rgb(34, 51, 68);
+    color: #56c8eb8a;
+    font-family: cursive;}
+    body {background-color: #155547d8;}
