@@ -1,7 +1,6 @@
-table,td,th {
-    border: 5px; 
+#table,td,th {
+    border: 3px solid rgb(8, 124, 28); 
     border-collapse:collapse;
-    background-color: rgb(34, 51, 68);
-    color: #56c8eb8a;
-    font-family: cursive;}
-    body {background-color: #155547d8;}
+    background-color: rgb(30, 128, 17);
+    color: #01fd4d;
+}
