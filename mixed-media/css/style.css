@@ -3,11 +3,11 @@
     border: 3px solid;
     border-color: rgb(49, 13, 13);
     border-collapse:collapse;
-    background-color: rgb(126, 10, 10);
+    background-color: rgb(241, 91, 91);
     color: #000000;
     font-family:sans-serif, serif, Arial;
     font-size: medium;
 }
 #backdiv{
-    background-color: rgb(162, 65, 65);
+    background-color: rgb(216, 102, 102);
 }
