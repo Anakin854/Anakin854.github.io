@@ -1,4 +1,4 @@
-/* Style sheet created by: Student's First Name Student's Last Name, Today's Date */
+/* Style sheet created by: Anakin Baldock, 10/19/2022 */
 
 /* Style for body specifies a background color */
 body {
@@ -6,6 +6,45 @@ body {
 }
 
 /* Styles for Mobile Layout */
+img {
+	max-width: 100%;
+	max-height: 350px;
+}
+
+nav ul{
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.7em;
+}
+
+nav li{
+	background-color: #000066;
+	list-style-type: none;
+	margin: 0.4em;
+	padding: 0.5em;
+	display: inline;
+	font-size: 20px;
+}
+
+* { max-width: 100%; }
+
+nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+	nav li {
+		display: block;
+		margin: 0.3em;
+		padding: 0.4em;
+		font-size: 16px;
+	}
+}
+.mobile {
+	display: inline;
+	width: 100%;
+}
 
 /* Style for the container centers the page and specifies the width */
 #container {
