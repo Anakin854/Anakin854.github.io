@@ -176,6 +176,8 @@ footer {
 		box-shadow: 1em 1em 1em #331400;
 		margin-top: 1em;
 	}
-	#display: none;
+	#display{ 
+		none;
+	}
 }
 	
