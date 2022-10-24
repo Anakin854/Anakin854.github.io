@@ -1,16 +1,12 @@
-#div{
-    background-color: blue;
-    border-color: ;
-    border-radius: ;
-    border-style: ;
-    border-width: ;
-    font-family: "Freight Sans Bold", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif";
-    font-size: ;
-    font-weight: ;
-    margin: ;
-    padding: ;
-    text-align: vertical-align ;
-    width: ;
-    color: ;
-    display: ;
+body { color: #000000;
+    background-color: #edf0f5;
+    font-family: "Lucida Grande", Arial, sans-serif;
+}
+
+div {
+    text-align: center;
+}
+
+#outerwrapper { width: 70%;
+margin: 0 auto 0 auto;
 }
