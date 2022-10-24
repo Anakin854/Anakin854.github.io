@@ -3,3 +3,7 @@ body { color: #000000;
     background-color: #B8D1EB;
     font-family: "Times New Roman", serif;
 }
+
+div {
+    text-align: center;
+}
