@@ -8,15 +8,16 @@
     <title>Registration</title>
 </head>
 <body>
+    <div>
     <h1>Sign Up</h1>
     <p>It's free and always will be.</p>
-    <input type="text" name="first_name" size="15" maxlength="100" placeholder="First Name">
-    <input type="text" name="last_name" size="15" maxlength="100" placeholder="Last Name">
-    <br><input type="text" name="your_email" size="15" maxlength="100" placeholder="Your Email">
-    <br><input type="text" name="re-enter_email" size="15" maxlength="100" placeholder="Re-enter Email">
-    <br><input type="text" name="new_password" size="15" maxlength="100" placeholder="New Password">
+    <input type="text" name="first_name" size="15" maxlength="100" placeholder="First Name" class="fandl">
+    <input type="text" name="last_name" size="15" maxlength="100" placeholder="Last Name" class="fandl">
+    <br><input type="text" name="your_email" size="15" maxlength="100" placeholder="Your Email" class="email">
+    <br><input type="text" name="re-enter_email" size="15" maxlength="100" placeholder="Re-enter Email" class="email">
+    <br><input type="text" name="new_password" size="15" maxlength="100" placeholder="New Password" class="pass">
     
-    <h4>Birthday</h4>
+    <h4 class="B">Birthday</h4>
     <select name="Month">
             <option disabled selected value>Month</option>
             <option value="January">January</option>
@@ -194,15 +195,16 @@
             <option value="1901">1901</option>
             <option value="1900">1900</option>
         </select>
-        <p><a href="">Why do I need to provide my birthday?</a></p>
 
+        <div id="birth">
+            <p><a href="">Why do I need to provide my birthday?</a></p>
+            </div>
 
-        <br><br><input type="radio" name="flwup" id="flwup" vaule="female"/>Female
+      <br> <br> <input type="radio" name="flwup" id="flwup" vaule="female"/>Female
         <input type="radio" name="flwup" id="flwup" vaule="male"/>Male
     
-        <p>By clicking Sign Up, you agree to our <a href="">Terms</a> and that you have read our <a href="">Data Use Policy</a> including our <a href="">Cookie Use</a></p>
-
+        <h6>By clicking Sign Up, you agree to our <a href="">Terms</a> and that you have read our <a href="">Data Use Policy</a> including our <a href="">Cookie Use.</a></h6>
         <input type="submit" name="Sign Up" id="sbutton">
-
+    </div>
 </body>
 </html>

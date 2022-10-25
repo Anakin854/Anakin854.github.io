@@ -1,6 +1,27 @@
 body { color: #000000;
-    background-color: #edf0f5;
     font-family: "Lucida Grande", Arial, sans-serif;
     border-radius: 5px;
-    margin: 0 auto;
+    border-color: white;
+    margin-left: 30%;
+    margin-right: 27%;
+}
+
+div {
+    background-color: #edf0f5;
+}
+
+#birth {
+    font-size:xx-small ;
+}
+
+.fandl {
+    margin-bottom: 5px;
+}
+
+.email {
+    margin-bottom: 5px;
+}
+
+.B {
+    margin-top: 7px;
 }
