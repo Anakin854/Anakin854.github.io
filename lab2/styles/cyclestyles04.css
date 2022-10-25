@@ -19,3 +19,11 @@ body {
     float: right;
     margin-left: 2%;
 }
+
+nav ul {
+    list-style-type: none;
+}
+
+.boldtext, dt {
+    font-weight: bold;
+}
