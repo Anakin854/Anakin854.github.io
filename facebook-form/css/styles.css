@@ -2,9 +2,6 @@ body { color: #000000;
     background-color: #edf0f5;
     font-family: "Lucida Grande", Arial, sans-serif;
     border-radius: 5px;
-}
-
-#button {
-    background-color: #659d50;
-    color: white;
+    margin-left: 30%;
+    margin-right: 30%;
 }
