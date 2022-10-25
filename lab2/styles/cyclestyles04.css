@@ -1,0 +1,21 @@
+/*Anakin Baldock and current date:10/25/22*/
+body {
+    color: black;
+    background-color: #ff9900;
+    font-family: Calibri, sans-serif;
+}
+
+#wrapper  {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.floatleft {
+    float: left;
+    margin-right: 2%;
+}
+
+.floatright {
+    float: right;
+    margin-left: 2%;
+}
