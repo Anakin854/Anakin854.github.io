@@ -6,6 +6,11 @@ img {
 }
 
 /* Styles for Mobile Layout */
+@media only screen and (min-width: 600px) {
+nav li {
+	display: block;
+}
+}
 
 /* Style for the container centers the page and specifies the width */
 #container {
@@ -132,12 +137,14 @@ nav li a:link {
 	color: #FFFFFF;	
 }
 
+
 nav li a:hover {
-	color: #FFFFFF;
+	color: #ffccff;
+	font-size: 1.05em;
 }
 
 nav li a:active {
-	color: #FFFFFF ;	
+	color: #9900ff ;	
 }
 
 /* Style specifies border, box shadow, and margins for the main element */
