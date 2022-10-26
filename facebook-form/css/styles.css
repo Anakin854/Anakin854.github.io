@@ -20,8 +20,17 @@ div {
 
 .email {
     margin-bottom: 5px;
+    padding-right: ;
+}
+
+.pass {
+    padding-right: ;
 }
 
 .B {
     margin-top: 7px;
+}
+
+.sign {
+    font-weight: bold;
 }
