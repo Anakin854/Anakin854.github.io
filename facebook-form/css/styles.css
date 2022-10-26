@@ -14,19 +14,31 @@ div {
     font-size:xx-small ;
 }
 
-.fandl {
+.f {
     margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.l {
+    margin-left: -3px;
+    padding-right: ;
 }
 
 .email {
     margin-bottom: 5px;
-    padding-right: 150px;
+    margin-left: 10px;
+    padding-right: 140px;
 }
 
 .pass {
-    padding-right: 150px;
+    margin-left: 10px;
+    padding-right: 140px;
 }
 
 .B {
     margin-top: 7px;
+}
+
+#sbutton {
+    background-color: #659d50;
 }
