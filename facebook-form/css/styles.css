@@ -1,7 +1,5 @@
 body { color: #000000;
     font-family: "Lucida Grande", Arial, sans-serif;
-    border-radius: 5px;
-    border-color: white;
     margin-left: 30%;
     margin-right: 27%;
     padding-right: 180px;
@@ -23,7 +21,7 @@ div {
 }
 
 .l {
-    padding-right: ;
+    margin-right: 20px;
 }
 
 .email {
@@ -38,15 +36,15 @@ div {
 }
 
 .B {
-    margin-top: 7px;
+margin-left: 10px;
 }
 
 button {
     background-color: #659d50;
+    border-color: #659d50;
+    border-radius:10px ;
+    border-width: 10px;
+    border-style: solid;
     color: white;
-}
-
-#sbutton {
-    background-color: #659d50;
-    color: white;
+    margin: 10px;
 }
