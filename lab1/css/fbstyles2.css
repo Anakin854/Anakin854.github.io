@@ -1,0 +1,25 @@
+div p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+section {
+    padding: 1%;
+    text-align: center;
+}
+
+article {
+    border-top: solid 0.2em #ff6600;
+    padding: 2%;
+    margin: 0.5%;
+    text-align: left;
+}
+
+aside {
+    text-align: center;
+    color: #fff;
+    background-color: #ff6600;
+    font-size: 1.25em;
+    margin: 1em;
+    padding: 1em;
+}

@@ -4,6 +4,8 @@ body { color: #000000;
     border-color: white;
     margin-left: 30%;
     margin-right: 27%;
+    padding-right: 180px;
+    padding-left: 120px;
 }
 
 div {
@@ -16,11 +18,11 @@ div {
 
 .f {
     margin-bottom: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-right:
 }
 
 .l {
-    margin-left: -3px;
     padding-right: ;
 }
 
@@ -37,6 +39,11 @@ div {
 
 .B {
     margin-top: 7px;
+}
+
+button {
+    background-color: #659d50;
+    color: white;
 }
 
 #sbutton {
