@@ -1,0 +1,38 @@
+/* Style sheet created by: Anakin Baldock Date:11/1/22 */
+
+body {
+	background: url(beach.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+header {
+	height: 5em;
+	background-color: #FFFFFF;
+	margin-bottom: 0.5em;
+	opacity: 20%;
+}
+
+nav {
+	height: 2em;
+	background-color: #FFFFFF;
+	margin-bottom: 1em;
+	opacity: 30%;
+}
+
+main {
+	height: 15em;
+	background-color: #FFFFFF;
+	margin-bottom: 1em;
+	display: block;
+	opacity: 40%;
+}
+
+footer {
+	height: 3em;
+	background-color: #FFFFFF;
+	font-size: 0.8em;
+	opacity: 50%;
+}
