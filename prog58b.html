@@ -24,12 +24,13 @@ function doQuad() {
     var num3 = document.getElementById("num3").value;
     num3 = Number(num3);
 
+    var pow = num2 * num2
     var sqn1 = Math.sqrt(num1);
     var sqn2 = Math.sqrt(num2);
     var sqn3 = Math.sqrt(num3);
 
-    var root = (- num2 + sqn2 * 2 - 4 * num1 * num3) / 2 * num1;
-    var root2 = (- num2 - sqn2 * 2 - 4 * sqn1 * sqn3) / 2 * num1;
+    var root = (- num2 + sqn2 * pow - 4 * num1 * num3) / 2 * num1;
+    var root2 = (- num2 - sqn2 * pow - 4 * sqn1 * sqn3) / 2 * num1;
 
     var p = document.getElementById("output");
     var out = "";
