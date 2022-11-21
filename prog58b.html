@@ -7,40 +7,30 @@
     <title>prog58b.html</title>
 </head>
 <body>
-
-    <p>Enter A</p><input type="number" id="num1">
-    <p>Enter B</p><input type="number" id="num2">
-    <p>Enter C</p><input type="number" id="num3">
-    <button onclick="doQuad();">Run Quadratic Equation</button>
-    <button onclick="reset();">Reset</button>
-    <p id="output"></p>
+    <label>A</label>
+    <input type="number" id="numA" name="numA">
+    <label>B</label>
+    <input type="number" id="numB" name="numB">
+    <label>C</label>
+    <input type="number" id="numC" name="numC">
+    <button onclick="calc();">Calculate</button>
+    <p id="out"></p>
 
     <script>
-function doQuad() {
-    var num1 = document.getElementById("num1").value;
-    num1 = Number(num1);
-    var num2 = document.getElementById("num2").value;
-    num2 = Number(num2);
-    var num3 = document.getElementById("num3").value;
-    num3 = Number(num3);
+        function calc() {
+            var A = document.getElementById("numA").value;
+            A = Number(A);
+            var B = document.getElementById("numB").value;
+            B = Number(B);
+            var C = document.getElementById("numC").value;
+            C = Number(C);
 
-    var sqn1 = Math.sqrt(num1);
-    var sqn2 = Math.sqrt(num2);
-    var sqn3 = Math.sqrt(num3);
+            var proot = (-B + Math.sqrt(B **2 - 4 * A * C)) / 2 * A
+            var nroot = (-B - Math.sqrt(B**2 - 4 * A * C)) / 2 * A
 
-    var root = (- num2 + sqn2 * num2 - 4 * num1 * num3) / 2 * num1;
-    var root2 = (- num2 - sqn2 * num2 - 4 * num1 * num3) / 2 * num1;
-
-    var p = document.getElementById("output");
-    var out = "";
-    out = out + "Quadratic Equation +: " + root + "<br/>";
-    out = out + "Quadratic Equation -: " + root2 + "<br/>";
-    p.innerHTML = out;
-    }
-
-    function reset() {
-        document.getElementById("output").innerHTML= "";
-    }
+            var out = document.getElementById("out")
+            out.innerHTML = proot + "       " + nroot
+        }
     </script>
 </body>
 </html>
