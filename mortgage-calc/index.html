@@ -7,6 +7,29 @@
     <title>Mortgage Calculator</title>
 </head>
 <body>
-    
+    <label>A</label>
+    <input type="number" id="numA" name="numA">
+    <label>B</label>
+    <input type="number" id="numB" name="numB">
+    <label>C</label>
+    <input type="number" id="numC" name="numC">
+    <button onclick="calc();">Calculate</button>
+    <p id="out"></p>
+
+    <script>
+        function calc() {
+            var A = document.getElementById("numA").value;
+            A = Number(A);
+            var B = document.getElementById("numB").value;
+            B = Number(B);
+            var C = document.getElementById("numC").value;
+            C = Number(C);
+
+
+
+            var out = document.getElementById("out")
+            out.innerHTML = p;
+        }
+    </script>
 </body>
 </html>
