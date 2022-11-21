@@ -7,28 +7,36 @@
     <title>Mortgage Calculator</title>
 </head>
 <body>
-    <label>A</label>
-    <input type="number" id="numA" name="numA">
-    <label>B</label>
-    <input type="number" id="numB" name="numB">
-    <label>C</label>
-    <input type="number" id="numC" name="numC">
+    <label>Principle:</label>
+    <input type="number" id="p" name="p">
+    <label>Interest Rate as %:</label>
+    <input type="number" id="r" name="r">
+    <label>Number of Years:</label>
+    <input type="number" id="t" name="t">
+    <label>Monthly Payment:</label>
+    <input type="number" id="m" name="m">
     <button onclick="calc();">Calculate</button>
+    <button onclick="reset();">Reset</button>
     <p id="out"></p>
 
     <script>
         function calc() {
-            var A = document.getElementById("numA").value;
-            A = Number(A);
-            var B = document.getElementById("numB").value;
-            B = Number(B);
-            var C = document.getElementById("numC").value;
-            C = Number(C);
-
+            var p = document.getElementById("p").value;
+            p = Number(p);
+            var r = document.getElementById("r").value;
+            r = Number(r);
+            var t = document.getElementById("t").value;
+            t = Number(t);
+            var m = document.getElementById("m").value;
+            m = Number(m);
 
 
             var out = document.getElementById("out")
             out.innerHTML = p;
+        }
+
+        function reset() {
+            document.getElementById("output").innerHTML= "";
         }
     </script>
 </body>
