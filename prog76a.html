@@ -23,10 +23,14 @@
         p.innerHTML = " "
         if (num >= 1 && num <= 9) {
             var num9 = num * 9;
+            var num5 = num9 * 12345679
             p.innerHTML += num + "<br/>";
             p.innerHTML += "x " + 9 + "<br/>";
             p.innerHTML += "_______<br/>";
             p.innerHTML += num9 + "<br/>";
+            p.innerHTML += "x " + 12345679 + "<br/>";
+            p.innerHTML += "_______<br/>";
+            p.innerHTML += num5 + "<br/>";
 
         } else { // Otherwise...
             alert("Number must be between 1 and 9!");
