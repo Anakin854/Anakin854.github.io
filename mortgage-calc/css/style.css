@@ -5,5 +5,6 @@ body {
 }
 
 #bod {
-    background-color: white;
+    border: 15px;
+    border-color: white;
 }
