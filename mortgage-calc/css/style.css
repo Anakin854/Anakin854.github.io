@@ -4,6 +4,7 @@ body {
 }
 
 #bod {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: white;
     border: 15px solid;
     border-color: white;
