@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Prog122b</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="js/script.js" defer>-->
+</head>
+<body>
+    <p id="out"><p id="out"></p>
+    <script>
+        var msg = "Hour       Pay<br/>";
+        var lcv = 1;
+        while (lcv <= 40) {
+            msg += lcv + "        " + (lcv * 4) + "" + "<br/>";
+            lcv++;
+        }
+        document.getElementById("out").innerHTML = msg;
+    </script><p id="out"></p>
+</body>
+</html>
