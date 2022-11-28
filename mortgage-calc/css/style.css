@@ -1,6 +1,6 @@
 body {
-    color: green;
-    background-color: rgb(136, 245, 136);
+    color: rgb(12, 150, 143);
+    background-color: rgb(14, 151, 185);
 }
 
 #bod {
@@ -13,3 +13,7 @@ body {
     padding-right: 180px;
     padding-left: 180px;
 }
+
+    input[type=number]:focus {color:rgb(12,150,143); border: 5px solid rgb(48, 121, 150);}
+    button:hover {background-color: rgb(44, 123, 241);}
+    button:active {background-color: rgb(46, 176, 236);}
