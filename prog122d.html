@@ -11,10 +11,11 @@
 <body>
     <p id="out"><p id="out"></p>
     <script>
-        var msg = "X Y<br/>";
+        var msg = "X &emsp Y<br/>";
         var lcv = 1;
         while (lcv <= 16) {
-            msg += lcv + " " + ((lcv **6) (-3 * (lcv ** 5)) (- 93 * (lcv ** 4)) (+ 87 * (lcv ** 3)) (+ 1596 * (lcv ** 2)) (-1380 * lcv) -2800) + "<br/>";
+            var poly = ((lcv **6) (-3 * (lcv ** 5)) (- 93 * (lcv ** 4)) (+ 87 * (lcv ** 3)) (+ 1596 * (lcv ** 2)) (-1380 * lcv) -2800)
+            msg += lcv + " " + poly  + "<br/>";
             lcv++;
         }
         document.getElementById("out").innerHTML = msg;
