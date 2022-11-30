@@ -9,5 +9,14 @@
 <body>
     <label for="num1">Num1</label>
     <input type="number" id="num1" name="num1">
+    <script>
+        var out = "";
+        var sum = 0;
+        for (var lcv = 3; lcv <= 9669; lcv += 3) {
+            sum += lcv
+            out += lcv + " &emsp; " + sum + "<br/>";
+        }
+        document.getElementById("out").innerHTML = sum;
+    </script>
 </body>
 </html>
