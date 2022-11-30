@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog152a</title>
+</head>
+<body>
+    <p id="out"></p>
+    <script>
+        var out = "";
+        var sum = 0;
+        for (var lcv = 3; lcv <= 9669; lcv += 3) {
+            sum += lcv
+            out += lcv + " &emsp; " + sum + "<br/>";
+        }
+        document.getElementById("out").innerHTML = sum;
+    </script>
+</body>
+</html>
