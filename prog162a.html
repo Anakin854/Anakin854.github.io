@@ -23,8 +23,8 @@ var sum = num * lcv;
         var out = "";
         var sum = 0;
         for (var lcv = 1; lcv <= 12; lcv -= 1) {
-            sum += lcv
-            out += lcv + " &emsp; " + sum + "<br/>";
+            sum += num * lcv
+            out += sum + "<br/>";
         }
         document.getElementById("out").innerHTML = sum;
     }
