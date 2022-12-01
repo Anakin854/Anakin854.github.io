@@ -7,16 +7,27 @@
     <title>Prog162a</title>
 </head>
 <body>
-    <label for="num1">Num1</label>
-    <input type="number" id="num1" name="num1">
+    <label for="num">Number</label>
+    <input type="num" id="num" name="num">
+    <button onclick="calc();">Calculate</button>
+    <p id="out"></p>
     <script>
+        function calc() {
+    var num = document.getElementById('num').value;
+num = Number(num);
+    var p = document.getElementById("out");
+p.innerHTML = " ";
+
+var out = "";
+var sum = num * lcv;
         var out = "";
         var sum = 0;
-        for (var lcv = 3; lcv <= 9669; lcv += 3) {
+        for (var lcv = 1; lcv <= 12; lcv -= 1) {
             sum += lcv
             out += lcv + " &emsp; " + sum + "<br/>";
         }
         document.getElementById("out").innerHTML = sum;
+    }
     </script>
 </body>
 </html>
