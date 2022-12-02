@@ -5,6 +5,7 @@ body {
 
 #bod {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
     background-color: white;
     border: 15px solid;
     border-color: white;
@@ -15,5 +16,11 @@ body {
 }
 
     input[type=number]:focus {color:rgb(12,150,143); border: 5px solid rgb(48, 121, 150);}
-    button:hover {background-color: rgb(44, 123, 241);}
+    button:hover {background-color: rgb(74, 147, 255);}
     button:active {background-color: rgb(46, 176, 236);}
+    button{
+        background-color: rgb(37, 201, 193);
+        border-color: rgb(37, 201, 193);
+        border-width: 2px;
+        border-radius:10px ;
+    }
