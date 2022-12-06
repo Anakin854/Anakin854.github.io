@@ -7,15 +7,26 @@
     <title>Prog93a</title>
 </head>
 <body>
-    <label for="kilo">KWH: </label>
+    <label for="KWH">KWH: </label>
     <input type="number" id="kilo" name="kilo">
 
     <button onclick="calc()">Calculate</button>
-    <p id="out"></p>
+    <p id="output"></p>
 
     <script>
-        var elctricity = 4.75
-        var surcharge = //10% of origional cost
+        
+        function calc() {
+            var KWH = Number(document.getElementById("KWH").value)
+            var ec = 4.75 * KWH
+            var sc = ec / 10
+            var ut = ec * 0.03
+            var lf = (ec + sc + ut) / 0.04
+            var pay = KWH + sc + ut
+            var op = lf
+            
+            var out = document.getElementById("output")
+            out.innerHTML = pay + "<br/>" + op
+        }
     </script>
     <!--4.75 cents per kilowatt hour,
     surcharge of 10%-->
