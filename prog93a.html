@@ -8,7 +8,7 @@
 </head>
 <body>
     <label for="KWH">KWH: </label>
-    <input type="number" id="kilo" name="kilo">
+    <input type="number" id="KWH" name="KWH">
 
     <button onclick="calc()">Calculate</button>
     <p id="output"></p>
@@ -20,15 +20,12 @@
             var ec = 4.75 * KWH
             var sc = ec / 10
             var ut = ec * 0.03
-            var lf = (ec + sc + ut) / 0.04
+            var lf = (ec + sc + ut) * 0.04
             var pay = KWH + sc + ut
-            var op = lf
             
             var out = document.getElementById("output")
-            out.innerHTML = pay + "<br/>" + op
+            out.innerHTML = "Pay this amount: " + pay + "<br/>" + "After May 20th pay: " + lf
         }
     </script>
-    <!--4.75 cents per kilowatt hour,
-    surcharge of 10%-->
 </body>
 </html>
