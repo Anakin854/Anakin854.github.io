@@ -17,14 +17,15 @@
         
         function calc() {
             var KWH = Number(document.getElementById("KWH").value)
-            var ec = 4.75 * KWH
-            var sc = ec / 10
-            var ut = ec * 0.03
-            var lf = (ec + sc + ut) * 0.04
-            var pay = KWH + sc + ut
+            var ec = 0.0457 * KWH;
+            var sc = ec / 10;
+            var ut = ec * 0.03;
+            var lf = (ec + sc + ut) * 0.04;
+            var pay = ec + sc + ut;
+            var pay2 = pay + lf;
             
             var out = document.getElementById("output")
-            out.innerHTML = "Pay this amount: " + pay + "<br/>" + "After May 20th pay: " + lf
+            out.innerHTML ="Kilowats Used: " + KWH + "<br/>Base Rate: " + ec.toFixed(2) + "<br/>Surcharge: " + sc.toFixed(2) + "<br/>Utility Tax: " + ut.toFixed(2) + "<br/>Pay this amount: " + pay.toFixed(2) + "<br/>After May 20th pay: " + pay2.toFixed(2)
         }
     </script>
 </body>
