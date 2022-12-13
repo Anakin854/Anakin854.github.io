@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prog 54c with Classes</title>
+    <title>Prog54c with Classes</title>
 </head>
 <body>
     <label for="rad">Radius: </label>
@@ -40,9 +40,9 @@
             var rad = Number(document.getElementById("rad").value);
             var circ = new Circle(rad);
             circ.calc();
-            document.getElementById("out").innerHTML =
-                "Area: " + calc.getArea() + "<br/>Circumference: "
-                         + calc.getCircumference() + "<br/>";
+            document.getElementbyId("out").innerHTML =
+                "Area: " + circ.getArea() + "<br/>Circumference: " 
+                         + circ.getCircumference() + "<br/>";
         }
     </script>
 </body>
