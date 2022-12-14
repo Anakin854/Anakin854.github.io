@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE GOES HERE</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js" integrity="sha512-WJXVjqeINVpi5XXJ2jn0BSCfp0y80IKrYh731gLRnkAS9TKc5KNt/OfLtu+fCueqdWniouJ1ubM+VI/hbo7POQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body style="background: black;">
+    <script>
+        // Predefine variables
+        // var x = 0;
+        let gap = 10;
+        let cirNum = 40;
+        let cirSize = 20;
+        let angle;
+        let ptNum = 100;
+        let rectSize = 600;
+
+        // Initialize the program
+        function setup() {
+            createCanvas(windowWidth, windowHight);
+            angleMode(degrees);
+        }
+
+        // Loop forever
+        function draw() {
+            background('black');
+            noCursor();
+            noStroke();
+            fill('white')
+            circle(mouseX, mouseY, 5);
+
+            //main graph
+            push();
+            translate(width/2, height/2);
+            rotate(angle);
+            angle = angle + map(mouseX, 0, width, -0.1, 0.1);
+            nofill();
+            stroke(white);
+            strokeWeight(1);
+            //for loop; 1, where to start, 2 where to end, 3 incorment each time
+            for(let i = 0; 1 < 15; 1 ++) {
+                arc(0, 0, cirSize + gap * i, cirSize + gap * i, angle * i, 360 - angle/2);
+            }
+            pop();
+
+            
+
+            //title subtitle
+            push();
+            translate(width/2, height - 90);
+            noStroke();
+            textFont('Arial');
+            textSize(15);
+            textAlign(CENTER, CENTER);
+            text('U.F.O', 0, 0);
+            textSize(10);
+            text('this is our 2nd demo', 0, 20);
+            pop();
+
+            //border of the album cover
+            push();
+            translate(width/2, height/2);
+            nofill();
+            stroke('white');
+            strokeWeight(2);
+            rectMode(CENTER);
+            rect(0, 0, rectSize, rectSize);
+
+            //random noise
+
+            stroke('white');
+            strokeWeight(1);
+            for(let i = 0; i < 100; i ++) {
+            point(random(-rectSize/2, rectSize/2), random(-rectSize/2, rectSize/2));
+            }
+            pop();
+        }
+    </script>
+</body>
+</html>
