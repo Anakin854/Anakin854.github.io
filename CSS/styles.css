@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+    background-color: #2088ad;
+    color: #8fdffc;
+    font-family:sans-serif, serif, Arial;
+}
+
+form {
+    text-align: center;
+    border: 3px solid;
+    border-color: #0A3140;
+    border-collapse:collapse;
+    background-color: #146380;
+    font-size: medium;
+}
+
+
+#table,td,th {
+    text-align: center;
+    border: 3px solid;
+    border-color: #0A3140;
+    border-collapse:collapse;
+    background-color: #146380;
+    font-size: medium;
+}
+
+
+
+
+
+
+/*About page parallax*/
+.wrapper {
+    height: 100vh; /* 100% of the viewport height */
+    overflow-x: hidden; /* prevent horizontal scroll */
+    overflow-y: auto; /* allow vertical scroll */
+    perspective: 2px; /* simulate distance from viewport */
+}
+
+.section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.static { background: red; }
+.bg1::after {
+    background-image:
+}
+.bg2::after {
+    background-image: url("https://picsum.photos/800/600")
+}
+
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body, html { overflow: hidden; }
+* { margin: 0; padding: 0; }
