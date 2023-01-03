@@ -48,10 +48,10 @@ form {
 
 .static { background: red; }
 .bg1::after {
-    background-image:url(images/wi sign)
+    background-image: url("../Images/wi.png");
 }
 .bg2::after {
-    background-image: url("https://picsum.photos/800/600")
+    background-image: url("../")
 }
 
 .parallax::after {
