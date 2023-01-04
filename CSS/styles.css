@@ -12,10 +12,13 @@ form {
     border-collapse:collapse;
     background-color: #146380;
     font-size: medium;
+    margin-left: 30%;
+    margin-right: 30%;
+
 }
 
 
-#table,td,th {
+table,td,th,tr {
     text-align: center;
     border: 3px solid;
     border-color: #0A3140;
@@ -24,6 +27,9 @@ form {
     font-size: medium;
 }
 
+table, tr {
+    margin-left: 25%;
+}
 
 
 
@@ -46,12 +52,12 @@ form {
     justify-content: center;
 }
 
-.static { background: red; }
+.static { background: #0A3140; }
 .bg1::after {
     background-image: url("../Images/wi.png");
 }
 .bg2::after {
-    background-image: url("../")
+    background-image: url("../Images/KitKat.jpg")
 }
 
 .parallax::after {
@@ -65,6 +71,6 @@ form {
     background-size: 100%;
     background-attachment: fixed;
     background-size: cover;
+    padding: 1%;
 }
 body, html { overflow: hidden; }
-* { margin: 0; padding: 0; }
