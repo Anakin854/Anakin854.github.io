@@ -3,6 +3,7 @@ body {
     background-color: #2088ad;
     color: #8fdffc;
     font-family:sans-serif, serif, Arial;
+    font-size: xx-large;
 }
 
 form {
@@ -41,6 +42,7 @@ table, tr {
     overflow-x: hidden; /* prevent horizontal scroll */
     overflow-y: auto; /* allow vertical scroll */
     perspective: 2px; /* simulate distance from viewport */
+    text-align: center;
 }
 
 .section {
@@ -54,10 +56,10 @@ table, tr {
 
 .static { background: #0A3140; }
 .bg1::after {
-    background-image: url("../Images/wi.png");
+    background-color: #146380;
 }
 .bg2::after {
-    background-image: url("../Images/KitKat.jpg")
+    background-color: #146380;
 }
 
 .parallax::after {
@@ -70,7 +72,15 @@ table, tr {
     z-index: -1;
     background-size: 100%;
     background-attachment: fixed;
-    background-size: cover;
+    background-size:cover ;
     padding: 1%;
 }
-body, html { overflow: hidden; }
+
+
+
+@media screen and (max-width: 600px) {
+    body{
+        font-size: medium;
+    }
+}
+
