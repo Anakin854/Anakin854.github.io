@@ -55,12 +55,7 @@ table, tr {
 }
 
 .static { background: #0A3140; }
-.bg1::after {
-    background-color: #146380;
-}
-.bg2::after {
-    background-color: #146380;
-}
+.static2 {background-color: #146380}
 
 .parallax::after {
     content: " ";
@@ -81,6 +76,9 @@ table, tr {
 @media screen and (max-width: 600px) {
     body{
         font-size: medium;
+    }
+    table, tr {
+        margin-left: 0%;
     }
 }
 
