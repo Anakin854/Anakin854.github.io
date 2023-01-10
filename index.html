@@ -25,21 +25,21 @@
 
     <h2>Need to build a website?  Contact me</h2>
     
-    <form action="#" method="post" style="text-align: center;" onsubmit="alert('Not implemented yet');">
-        <br> Name:<span class="rqd">*</span class="rqd"><br> <input type="text" name="subject" id="subject" required
+    <form action="#" method="post" style="text-align: center;" onsubmit="alert('Your form has been submited');">
+        <br> Name:<span class="rqd">*</span class="rqd"><br> 
+            <input type="text" id="Subject" name="subject" id="subject" required
             placeholder="Name"/></html></br>
        
             <br> What help can I provide<span class="rqd">*</span class="rqd"><br> <input type="text" name="subject" id="subject" required placeholder="Subject..."/>
         <br><br>
         <label>More details:</label> <br>
-        <textarea name="tbody" id="tbody" required
-           placeholder="Details..."max-width: 50px></textarea></br>
+        <textarea id="texta" name="tbody" id="tbody" placeholder="Details..."max-width: 50px></textarea></br>
 
        <br> <label for="attach">Attachments: </label>
         <br><input type="file" name="attach" id="attach">
         
        <br><br><lable for="priority">When would you like to start?</lable>
-        <br><select name="Month">
+        <br><select id="Month" name="Month" required>
             <option disabled selected value>Month</option>
             <option value="January">January</option>
             <option value="February">February</option>
@@ -55,7 +55,7 @@
             <option value="December">December</option>
         </select>
 
-        <select name="Day">
+        <select id="Day" name="Day" required>
             <option disabled selected value>Day</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -90,7 +90,7 @@
             <option value="31">31</option>
         </select>
 
-        <select name="Year">
+        <select id="Year" name="Year" required>
             <option disabled selected value>Year</option>
             <option value="2023">2023</option>
             <option value="2024">2024</option>
@@ -98,11 +98,12 @@
             
         </select>
         </select>
-        <br><br>Do you want a follow up email?
-        <br><input type="radio" name="flwup" id="flwup" vaule="yes"/>Yes
+        <br><br><label> Do you want a follow up email? </label>
+        
+        <br><input type="radio" name="flwup" id="flwup" vaule="yes" required/>Yes
         <br><input type="radio" name="flwup" id="flwup" vaule="No"/>No
         
-      <br> <br><input type="submit" name="submit" id="sbutton">
+      <br> <br><button type="submit" name="submit" id="sbutton">Submit</button>
         
         </form>
 
