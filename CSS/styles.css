@@ -1,5 +1,5 @@
 body {
-    text-align: center;
+    
     background-color: #2088ad;
     color: #8fdffc;
     font-family:sans-serif, serif, Arial;
@@ -44,7 +44,6 @@ table, tr {
     overflow-x: hidden; /* prevent horizontal scroll */
     overflow-y: auto; /* allow vertical scroll */
     perspective: 2px; /* simulate distance from viewport */
-    text-align: center;
 }
 
 .section {
@@ -99,14 +98,35 @@ table, tr {
     background-repeat: no-repeat;
     display: flex;
 }
-.intro h2 {margin: auto;}
+.intro h1 {margin: auto;}
 
 .container{
     width: 85%;
     margin: auto;
 }
 .container h1 {
+    text-align: center;
     margin: 20px;
 }
+.row{
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out;
+}
+.col{
+    flex-basis: 40%;
+}
 
+.active{
+    opacity: 1;
+    transform: scale(1);
+}
+p{
+    flex-basis: 40%;
+}
 
