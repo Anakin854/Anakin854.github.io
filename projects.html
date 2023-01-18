@@ -56,5 +56,19 @@
 
         You can go back to the <a href="index.html">Home page</a> or check out my <a href="about.html">about page</a> right here.
     </table>
+
+    <button id="abtn">And this one is even brighter</button>
+        <div style="background: rgb(120, 220, 250); 
+        width: 100px; height: 100px; position: absolute;"></div>
+
+<script>
+    $(document).ready(function(){
+$("#abtn").click(function(){
+    $("div").animate({left: '250px'});
+    $("div").fadeOut(3000);
+});
+});
+</script>
+
 </body>
 </html>

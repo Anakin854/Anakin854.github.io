@@ -38,6 +38,19 @@
             <h2>Work and volunteer experience</h2>
             <p>I have not had work or volunteer experience, but I plan to over the summer.</p>
         </section>
+
+        <button id="abtn">Another beuitful blue box.</button>
+        <div style="background: rgb(44, 79, 235); 
+        width: 100px; height: 100px; position: absolute;"></div>
+
+<script>
+    $(document).ready(function(){
+$("#abtn").click(function(){
+    $("div").animate({left: '250px'});
+    $("div").fadeOut(3000);
+});
+});
+</script>
         
     </main>
 </body>
