@@ -93,7 +93,7 @@ table, tr {
 
 .intro {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.486)), url(../Images/me.jpg);
+    background-image: url(../Images/me.jpg);
     background-size: cover;
     display: flex;
 }
