@@ -93,7 +93,7 @@ table, tr {
 
 .intro {
     height: 100vh;
-    background-image: url(../Images/me.jpg);
+    background-image: url(../images/me.jpg);
     background-size: cover;
     display: flex;
 }
