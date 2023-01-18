@@ -85,7 +85,7 @@ table, tr {
     }
     .intro{
     height: 100vh;
-    background-image : linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.486)), url(../Images/me2.jpg)!important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.486)), url(../Images/me2.jpg)!important;
     background-size: cover;
     display: flex;
     }
@@ -93,8 +93,18 @@ table, tr {
 
 .intro {
     height: 100vh;
-    background-image: url(../images/me.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.486)), url(../images/me.jpg);
     background-size: cover;
     display: flex;
 }
 .intro h1 {margin-left: 15%;}
+
+h4 {
+    font-size: 21px;
+    font-family: 'Bungee', cursive;
+  }
+  h4 #clock {
+    font-size: 36px;
+    display: block;
+    padding: 5px 0px;
+  }

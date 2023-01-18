@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
     <title>Home</title>
-    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="intro">
@@ -110,5 +110,19 @@
       <br> <br><button type="submit" name="submit" id="sbutton">Submit</button>
         
         </form>
+
+        <div style="background: rgb(10, 45, 202); 
+        width: 100px; height: 100px; position: absolute;"></div>
+        <button id="abtn">Run Animation</button>
+
+<script>
+    $(document).ready(function(){
+$("#abtn").click(function(){
+    $("div").animate({left: '250px'});
+    $("div").fadeOut(3000);
+});
+});
+</script>
+
 </body>
 </html>
