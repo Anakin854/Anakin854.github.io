@@ -85,7 +85,7 @@ table, tr {
     }
     .intro{
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.486)), url(../images/me2.jpg)!important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.486)), url(../images/)
     background-size: cover;
     display: flex;
     }
@@ -93,7 +93,7 @@ table, tr {
 
 .intro {
     height: 100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.486)), url(../images/me.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.486)), url(../images/);
     background-size: cover;
     display: flex;
 }
